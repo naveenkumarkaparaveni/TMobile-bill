@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    max-width: 900px;
+}
+
+h2 {
+    margin-bottom: 6px;
+}
+
+#controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#preview {
+    max-width: 200px;
+    max-height: 160px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    padding: 4px;
+}
+
+.preview-container {
+    margin-left: auto;
+    text-align: right;
+}
+
+#outputTable {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#outputTable td,
+#outputTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: right;
+}
+
+#outputTable td.account,
+#outputTable th.account {
+    text-align: left;
+}
+
+#outputTable th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#status {
+    margin-top: 12px;
+    white-space: pre-wrap;
+    font-family: monospace;
+}
+
+.small {
+    font-size: 0.9em;
+    color: #555;
+}
+
+button,
+input[type="file"],
+a#downloadBtn {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+a#downloadBtn[disabled] {
+    pointer-events: none;
+    opacity: 0.4;
+}

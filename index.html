@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bill Splitter</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.1.1/dist/tesseract.min.js"></script>
+</head>
+<body>
+
+<h2>📸 T-Mobile Image Bill Splitter — Plans Shared Equally</h2>
+<div class="small">Upload a photo or scanned bill. The script tries to find account phone numbers and 3 columns of amounts: Plans, Equipment, Services.</div>
+
+<div id="controls">
+    <input type="file" id="imgInput" accept="image/*" />
+    <button id="processBtn">Process Bill</button>
+    <a id="downloadBtn" disabled>Download CSV</a>
+    <div class="preview-container">
+        <img id="preview" src="" alt="preview" />
+    </div>
+    <div style="width:100%; margin-top:12px;">
+        <div style="display:flex; gap:8px; align-items:center; margin-top:6px;">
+        </div>
+    </div>
+</div>
+
+<pre id="status"></pre>
+
+<table id="outputTable" aria-live="polite"></table>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
